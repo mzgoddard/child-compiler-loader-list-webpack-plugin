@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Michael \"Z\" Goddard <mzgoddard@gmail.com>",
+  "repository": {
+    "git": "https://github.com/mzgoddard/child-compiler-loader-list-webpack-plugin.git"
+  },
   "license": "ISC"
 }
