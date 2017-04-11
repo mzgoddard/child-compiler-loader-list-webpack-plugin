@@ -1,6 +1,6 @@
 {
   "name": "child-compiler-loader-list-webpack-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Set loader lists for child compilers used by plugins like html-webpack-plugin.",
   "main": "index.js",
   "scripts": {
