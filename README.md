@@ -6,6 +6,22 @@ A specific use case this was originally written to solve was using html-webpack-
 
 In [an example](https://github.com/mzgoddard/child-compiler-loader-list-webpack-plugin-example) with the above use case [this code](https://github.com/mzgoddard/child-compiler-loader-list-webpack-plugin-example/blob/0db50c9c003be76877cef3ce98df69b50a3f773d/webpack.config.build-baked.js#L55-L63) performs that disable of the extract loader.
 
+## Webpack 2
+
+```js
+new ChildCompilerLoaderListPlugin({
+  test: /html-webpack-plugin/,
+  rules: rules
+  .filter(function(item) {return item.test.source !== '\\.styl$';})
+  .concat({
+    test: /\.styl$/,
+    loader: 'raw-loader',
+  }),
+}),
+```
+
+## Webpack 1
+
 ```js
 new ChildCompilerLoaderListPlugin({
   test: /html-webpack-plugin/,
